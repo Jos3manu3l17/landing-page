@@ -101,7 +101,7 @@ main {
 
 .hero-left {
   flex: 1;
-  background: url('dentista.jpg') center/cover no-repeat;
+  background: url('odontologa.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -113,7 +113,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 70, 45, 0.65);
+  background-color: rgba(10, 87, 60, 0.65);
   z-index: 0;
 }
 
@@ -163,6 +163,7 @@ main {
   font-weight: 600px;          
   box-shadow: 0 6px 18px rgba(44,166,111,0.18); 
   transition: .3s;
+  border-radius: 20px;
 }
 
 .btn-btn-primero:hover {
@@ -180,6 +181,7 @@ main {
   border: 2px solid rgba(255,255,255,0.18);       
   box-shadow: 0 6px 18px rgba(44,166,111,0.18);
   transition: .3s; 
+  border-radius: 20px;
 }
 
 .btn-btn-segundo:hover {
@@ -212,7 +214,8 @@ main {
 
 .fila-formulario {
   display: flex;                        
-  gap: 12px;                             
+  gap: 12px;   
+  padding: 10px;                          
 }
 
 .hero-right input {
@@ -224,6 +227,21 @@ main {
   font-size: 20px;                   
 }
 
+.hero-right input:focus {
+  border-color: var(--color-principal);
+  box-shadow: 0 0 8px rgba(44,166,111,0.12); 
+}
+
+.hero-btn .btn-btn-primero {
+  width: 160px;                          
+  align-self: center;                    
+  margin-top: 8px;                     
+}
+
+.hero-left, .hero-right {
+  width: 100%;                         
+  padding: 100px;
+}
 
 
 
